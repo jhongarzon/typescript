@@ -1,10 +1,9 @@
-import React from "react";
 import { Navigate, NavLink, Route, Routes } from "react-router-dom";
 import { LazyPage1, LazyPage2, LazyPage3 } from "../pages";
 
 const LazyLayout = () => {
   return (
-    <div>
+    <>
       <h1>LazyLayout Page</h1>
       <ul>
         <li>
@@ -26,7 +25,7 @@ const LazyLayout = () => {
           element={<Navigate to="lazy1" replace></Navigate>}
         ></Route>
       </Routes>
-    </div>
+    </>
   );
 };
 
